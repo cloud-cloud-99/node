@@ -23,7 +23,7 @@ install:
         mode: balance-tlb
         miimon: 100
   device: /dev/sda
+  force_mbr: true
+  data_disk: /dev/sdb
   iso_url: https://releases.rancher.com/harvester/v1.1.1/harvester-v1.1.1-amd64.iso
-  vip: 10.100.0.100       # The VIP to access the Harvester GUI. Make sure the IP is free to use.
-  vip_mode: static        # Or dhcp, check configuration file for more information.
   
